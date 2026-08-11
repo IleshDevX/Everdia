@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏆 Everdia Luxury Eco-Resort Website
 
 A modern React.js application for **Everdia** luxury eco-resorts. Built with advanced frontend techniques like scroll-triggered animations, smooth page transitions, and responsive design.
@@ -31,3 +32,6 @@ To run this project locally, follow these steps:
    npm install
    npm run dev
    ```
+=======
+Hello
+>>>>>>> 68c7494644cae4fac561d4a3ebafedf6508b63aa
