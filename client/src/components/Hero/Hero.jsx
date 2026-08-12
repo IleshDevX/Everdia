@@ -3,7 +3,6 @@ import smoke from "../../assets/smoke_final.mp4";
 import mobileHeroBg from "../../assets/hero-mobile.png";
 import { useGSAP } from "@gsap/react";
 import { useMediaQuery } from "react-responsive";
-import { FiArrowDown } from "react-icons/fi";
 
 const Hero = () => {
     const isMobHero = useMediaQuery({
@@ -28,7 +27,7 @@ const Hero = () => {
     }, [isMobHero]);
 
     return (
-        <section id="hero" className="hero-section w-dvw md:h-dvh h-[100vh] md:p-2 p-2.5 mb-20 relative">
+        <section id="hero" className="hero-section w-full md:h-dvh h-[100vh] md:p-2 p-2.5 mb-20 overflow-hidden">
             <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden">
                 <div className="responsive-mobile">
                     {/* Background image (down layer) */}
@@ -54,53 +53,34 @@ const Hero = () => {
                     ></video>
                 </div>
 
-                {/* Hero Overlay Content */}
-                <div className="p-6 relative z-20 flex flex-col justify-between h-full">
-                    {/* Top Status Widget */}
-                    <div className="flex justify-between items-center w-full pt-4 px-2">
-                        <div className="glass-card px-4 py-2 rounded-full flex items-center gap-3 border border-white/20 text-xs font-semibold text-[#f4efe7]">
-                            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span>Western Ghats Reserve</span>
-                            <span className="opacity-40">|</span>
-                            <span>24°C</span>
-                            <span className="opacity-40">|</span>
-                            <span>AQI 99 Pristine</span>
-                        </div>
-                    </div>
-
-                    {/* Title & Subtext Container */}
-                    <div className="relative pb-10">
+                <div className="p-4 md:p-6 flex flex-col md:justify-center relative z-20 h-full">
+                    <div className="relative h-full flex flex-col justify-between pt-4 pb-6">
+                        {/* Title - sharp, non-blurry drop shadow */}
                         <h1
-                            className="text-[#f4efe7] text-start text-6xl md:text-9xl font-bold tracking-wider"
-                            style={{ textShadow: "0 4px 20px rgba(0,0,0,0.6)" }}
+                            className="text-[#f4efe7] text-start text-6xl md:text-9xl font-bold tracking-wider lg:absolute lg:left-2"
+                            style={{ textShadow: "0 4px 20px rgba(0, 0, 0, 0.7)" }}
                         >
                             Everdia
                         </h1>
 
-                        <div className="w-full h-auto mt-4 flex md:flex-row flex-col md:justify-between md:items-end gap-4">
+                        {/* Bottom Subtitle & Paragraph Container */}
+                        <div className="w-full h-auto lg:absolute bottom-[8%] flex md:flex-row flex-col md:justify-between md:items-end gap-4 mt-auto">
+                            {/* Subtitle - spacious line-height */}
                             <h2
-                                className="text-start md:text-[#f4efe7] text-[#b1a696] text-2xl md:text-3xl font-bold md:tracking-wider leading-6 flex flex-col gap-1"
-                                style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
+                                className="text-start lg:mt-0 md:text-[#f4efe7] text-[#b1a696] text-2xl md:text-3xl font-bold md:tracking-wider leading-snug md:leading-8 flex flex-col gap-1.5"
+                                style={{ textShadow: "0 2px 10px rgba(0, 0, 0, 0.9)" }}
                             >
-                                <span>Closer to Nature —</span>
+                                <span>Closer to Nature</span>
                                 <span>Closer to Yourself</span>
                             </h2>
 
-                            <div className="flex flex-col items-start md:items-end gap-3 md:w-[35%] w-[80%]">
-                                <p
-                                    className="text-[#f4efe7] text-[0.75rem] font-medium tracking-wide md:text-end text-justify leading-relaxed"
-                                    style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
-                                >
-                                    Spend unforgettable and remarkable time in India's pristine jungle sanctuaries with—Everdia.
-                                </p>
-                                <a
-                                    href="#welcome"
-                                    className="glass-card px-3 py-1.5 rounded-full flex items-center gap-2 text-xs font-semibold text-[#f4efe7] hover:bg-[#f4efe7] hover:text-[#181717] transition-all duration-300 group"
-                                >
-                                    <span>Explore Sanctuaries</span>
-                                    <FiArrowDown className="transition-transform group-hover:translate-y-1" />
-                                </a>
-                            </div>
+                            {/* Paragraph - clear font size & comfortable width */}
+                            <p
+                                className="md:max-w-xs w-full text-[#f4efe7] text-xs md:text-sm font-medium tracking-wide leading-relaxed md:text-right text-left"
+                                style={{ textShadow: "0 2px 10px rgba(0, 0, 0, 0.9)" }}
+                            >
+                                Spend unforgettable and remarkable time in India's pristine jungle sanctuaries with Everdia.
+                            </p>
                         </div>
                     </div>
                 </div>

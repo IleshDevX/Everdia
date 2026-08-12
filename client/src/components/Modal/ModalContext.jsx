@@ -4,16 +4,13 @@ const ModalContext = createContext();
 
 export const ModalProvider = ({ children }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isReserveOpen, setIsReserveOpen] = useState(false);
     const [isMapOpen, setIsMapOpen] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
-    const toggleReserve = () => setIsReserveOpen(prev => !prev);
     const toggleMap = () => setIsMapOpen(prev => !prev);
 
     const closeAll = () => {
         setIsMenuOpen(false);
-        setIsReserveOpen(false);
         setIsMapOpen(false);
     };
 
@@ -22,8 +19,6 @@ export const ModalProvider = ({ children }) => {
             value={{
                 isMenuOpen,
                 toggleMenu,
-                isReserveOpen,
-                toggleReserve,
                 isMapOpen,
                 toggleMap,
                 closeAll,

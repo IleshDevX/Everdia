@@ -28,7 +28,7 @@ const Feedback = () => {
     const progressWidth = feedbackReviewLG[index][3];
 
     return (
-        <section id="feedback" className='w-screen h-dvh p-8 flex flex-col justify-center items-center bg-[#181717] relative'>
+        <section id="feedback" className='w-full h-dvh p-8 flex flex-col justify-center items-center bg-[#181717] relative overflow-hidden'>
             <div className='w-full max-w-6xl text-left'>
                 <div className="flex justify-between items-center mb-4">
                     <p className='text-[.7rem] font-bold text-[#eae5dd] uppercase tracking-widest'>

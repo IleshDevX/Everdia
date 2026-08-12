@@ -33,7 +33,7 @@ const FooterBanner = () => {
     }, { scope: fbConRef });
 
     return (
-        < div ref={fbConRef} className="w-screen h-dvh p-2 overflow-hidden" >
+        <div ref={fbConRef} className="w-full h-dvh p-2 overflow-hidden">
             <div className='w-full relative overflow-hidden rounded-4xl'>
                 <ClickIndicator active={active} />
                 <img
@@ -45,12 +45,11 @@ const FooterBanner = () => {
                 <div className='absolute bottom-5 px-4 w-full'>
                     <div className="w-full h-auto flex md:flex-row flex-col md:justify-between md:items-end">
                         <h2
-                            className="text-start lg:mt-0 md:text-[#f4efe7] text-[#b1a696] text-2xl font-bold md:tracking-wider leading-5 flex flex-col gap-1"
+                            className="text-start lg:mt-0 md:text-[#f4efe7] text-[#b1a696] text-2xl font-bold md:tracking-wider leading-snug md:leading-8 flex flex-col gap-1"
                             style={{ textShadow: '2px 2px 4px #000' }}
                         >
-                            <span>Closer to</span>
-                            <span>Nature—Closer</span>
-                            <span>to Yourself</span>
+                            <span>Closer to Nature—</span>
+                            <span>Closer to Yourself</span>
                         </h2>
 
                         <p

@@ -1,16 +1,13 @@
 import { FaBehance, FaInstagram, FaDribbble } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import MarqueeText from '../Marquee/MarqueeText';
-import { useModal } from "../Modal/ModalContext";
 
 const Footer = () => {
-    const { toggleReserve } = useModal();
-
     return (
-        <section id="contact" className='w-screen h-dvh px-6 mt-10 flex flex-col justify-between pb-10'>
+        <section id="contact" className='w-full h-dvh px-6 mt-10 flex flex-col justify-between pb-10 overflow-hidden'>
             <div>
                 <p className='text-[.7rem] text-[#eae5dd] choose-subtitle mt-10 uppercase tracking-widest'>
-                    Interested in an amazing adventure?<br />Reserve your sanctuary stay at Everdia
+                    Interested in an amazing adventure?<br />Connect with Everdia
                 </p>
                 <div className="mt-4">
                     <MarqueeText />
@@ -20,13 +17,13 @@ const Footer = () => {
             <div className='flex flex-col md:flex-row justify-between items-start md:items-center text-xl md:text-2xl mt-10 gap-8'>
                 <h3 className='text-[#b1a696] leading-relaxed max-w-xl'>
                     Everdia offers luxury eco-resorts nestled in serene Indian jungle landscapes. Experience nature with ultimate comfort.<br /><br />
-                    If you would like to book your sanctuary stay—{" "}
-                    <button
-                        onClick={toggleReserve}
+                    If you would like to inquire about your sanctuary stay—{" "}
+                    <a
+                        href="mailto:stay@everdia.com"
                         className='text-[#f4efe7] hover:text-[#b1a696] underline cursor-pointer font-semibold transition-colors'
                     >
-                        reserve here.
-                    </button>
+                        contact us.
+                    </a>
                 </h3>
 
                 <div className='flex flex-col justify-center items-start md:items-end gap-2 text-base md:text-xl font-medium'>

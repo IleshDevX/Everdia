@@ -70,7 +70,7 @@ const StickyCols = () => {
     });
 
     return (
-        <section className="sticky-cols w-screen h-dvh overflow-hidden bg-[#181717] lg:mb-20 relative">
+        <section className="sticky-cols w-full h-dvh overflow-hidden bg-[#181717] lg:mb-20 relative">
             {/* Audio Toggle Badge */}
             <button
                 onClick={() => setIsMuted(!isMuted)}

@@ -69,7 +69,7 @@ const FooterTitle = () => {
     }, { scope: ftConRef });
 
     return (
-        <section ref={ftConRef} className='relative z-1 w-screen h-[40vh] border-1 border-t-[#c4c1b9]'>
+        <section ref={ftConRef} className='relative z-1 w-full h-[40vh] border-1 border-t-[#c4c1b9] overflow-hidden'>
             <div className='w-full flex justify-between items-center px-6 mt-8'>
                 <p className='text-[#b1a696] text-[0.7rem]'>
                     Created for <a href="#" className='text-[#f2ede5]'>Everdia</a>

@@ -7,7 +7,7 @@ const MapLink = () => {
     const { toggleMap } = useModal();
 
     return (
-        <section id="map" className="w-screen h-[90vh] bg-[#181717] flex flex-col justify-center items-center text-center relative px-4">
+        <section id="map" className="w-full h-[90vh] bg-[#181717] flex flex-col justify-center items-center text-center relative px-4 overflow-hidden">
             <div>
                 <p className="text-[0.7rem] font-bold text-[#a79c8d] choose-subtitle uppercase tracking-widest">
                     Closer Than You Think
