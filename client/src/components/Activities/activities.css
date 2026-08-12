@@ -15,7 +15,7 @@
     left: 0;
     color: #f4efe7;
     clip-path: inset(100% 0 0 0);
-    white-space: wrap;
+    white-space: normal;
     transition: none;
     z-index: 100;
 }
