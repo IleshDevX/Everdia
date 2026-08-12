@@ -76,7 +76,7 @@ const Showcase = () => {
                 {/* Image 1 */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#f4efe7]">
-                        <h1 className="text-3xl font-bold">Buggy tours<br /> in the desert</h1>
+                        <h1 className="text-3xl font-bold">Dawn Tiger<br /> Safaris</h1>
                         <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Easy</p>
                     </div>
                     <img
@@ -85,7 +85,7 @@ const Showcase = () => {
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
-                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
+                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Track majestic Bengal tigers and rare wildlife on a guided<br />dawn safari through India's protected bio-corridors.</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">01</p>
                             <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
@@ -96,16 +96,16 @@ const Showcase = () => {
                 {/* Image 2 */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#f4efe7]">
-                        <h1 className="text-3xl font-bold">Breathtaking<br />desert hikes</h1>
+                        <h1 className="text-3xl font-bold">Canopy &<br /> River Treks</h1>
                         <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Medium</p>
                     </div>
                     <img
                         src={acImg2}
-                        alt="Activity 1"
+                        alt="Activity 2"
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
-                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
+                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Guided hikes through ancient Western Ghats rainforests<br />and crystal-clear mountain streams.</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">02</p>
                             <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
@@ -116,16 +116,16 @@ const Showcase = () => {
                 {/* Image 3 */}
                 <div className="relative flex-shrink-0 w-[80vw] h-full overflow-hidden">
                     <div className="w-[77vw] absolute top-10 left-5 flex justify-between items-start text-[#f4efe7]">
-                        <h1 className="text-3xl font-bold">Exciting<br /> rock climbing</h1>
+                        <h1 className="text-3xl font-bold">Night Bio-<br /> Expeditions</h1>
                         <p className="border-[1px] rounded-3xl px-2 py-1 text-center text-[0.7rem]">Hard</p>
                     </div>
                     <img
                         src={acImg3}
-                        alt="Activity 1"
+                        alt="Activity 3"
                         className="image-item w-full h-full object-cover rounded-[2.5rem]"
                     />
                     <div className="w-[77vw] absolute bottom-10 left-5 flex justify-between items-start ">
-                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
+                        <p className="text-[0.68rem] font-bold text-[#f4efe7]">Discover nocturnal wildlife, bio-luminescent flora,<br />and deep forest sounds under expert guidance.</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
                             <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>

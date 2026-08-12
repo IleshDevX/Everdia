@@ -121,15 +121,15 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-background">
-                <img src={gbg1} alt="Classic Everdia" />
+                <img src={gbg1} alt="Rainforest Everdia" />
                 <div className="gallery-topText">
-                    <h4>Classic Everdia</h4>
+                    <h4>Rainforest Everdia</h4>
                     <h3>(Scroll)</h3>
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#b1a696]' />
-                        <h3>Classic Everdia boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in a desert landscape</h3>
+                        <h3>Rainforest Everdia boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in the Western Ghats</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#4f4b48]">
                         <div className="progress-line absolute z-10 bg-[#f4efe7] w-[33%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -138,15 +138,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-second" className="gallery-background2">
-                <img src={gbg2} alt="Terrace Everdia" />
+                <img src={gbg2} alt="Corridor Lodge" />
                 <div className="gallery-topText">
-                    <h4>Terrace Everdia</h4>
+                    <h4>Corridor Lodge</h4>
                     <h3>(Scroll)</h3>
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#b1a696]' />
-                        <h3>Terrace Everdia boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in a desert landscape</h3>
+                        <h3>Corridor Lodge boasts refined aesthetics and a modern <br /> interior, creating a peaceful stay along protected tiger paths</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#4f4b48]">
                         <div className="progress-line absolute z-10 bg-[#f4efe7] w-[67%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>
@@ -155,15 +155,15 @@ const Gallery = () => {
             </div>
 
             <div id="gallery-third" className="gallery-background2">
-                <img src={gbg3} alt="Desert Everdia" />
+                <img src={gbg3} alt="Wild River Villa" />
                 <div className="gallery-topText">
-                    <h4>Desert Everdia</h4>
+                    <h4>Wild River Villa</h4>
                     <h3>(Scroll)</h3>
                 </div>
                 <div className="gallery-bottomText">
                     <div className='w-full flex justify-center items-center gap-0'>
                         <BsFillPlusCircleFill className='w-8 h-8 text-[#b1a696]' />
-                        <h3>Desert Everdia boasts refined aesthetics and a modern <br /> interior, creating an intimate retreat in a desert landscape</h3>
+                        <h3>Wild River Villa boasts refined aesthetics and a modern <br /> interior, creating a tranquil retreat overlooking pristine streams</h3>
                     </div>
                     <div className="relative z-9 w-50 h-[0.1rem] bg-[#4f4b48]">
                         <div className="progress-line absolute z-10 bg-[#f4efe7] w-[100%] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"></div>

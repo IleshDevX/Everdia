@@ -133,8 +133,7 @@ const Activities = () => {
                     </div>
                 </div>
                 <div className='lg:w-1/2 w-full text-[#b1a696] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-0'>
-                    <p>We want to make sure your stay is exciting and enjoyable. That’s why we offer a variety of activities with different levels of engagement. Whether you seek
-                        thrills or tranquility, there’s something for everyone to make your desert stay truly memorable.</p>
+                    <p>We want to make sure your stay is exciting and impactful. That’s why we offer a variety of jungle expeditions with different levels of engagement. Whether you seek tiger safari thrills or serene canopy tranquility, there’s something for everyone to make your forest stay truly memorable.</p>
                 </div>
             </div>
         </section>

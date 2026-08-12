@@ -1,32 +1,32 @@
 export const welcomeLinesLG = [
-    "Welcome to a world of wild California",
-    "desert with Everdia, where you will",
-    "discover exquisite nature observing it",
-    "from luxury houses, nestled in the",
+    "Welcome to a world of wild Indian",
+    "jungles with Everdia, where you will",
+    "discover pristine nature observing it",
+    "from luxury lodges, nestled in",
     "one of the most breathtaking",
-    "destination on the United States.",
+    "bio-reserves on the continent.",
 ];
 export const welcomeLinesSM = [
     "Welcome to a world",
-    "of wild California",
-    "desert with ",
+    "of wild Indian",
+    "jungles with ",
     "Everdia, where ",
     "you will discover ",
-    "exquisite nature",
+    "pristine nature",
     "observing it from",
-    "luxury houses,",
-    "nestled in the one",
+    "luxury lodges,",
+    "nestled in one",
     "of the most",
     "breathtaking",
-    "destination on the",
-    "United States.",
+    "bio-reserves on",
+    "the continent.",
 ];
 
-export const chooseLinesLG =[
+export const chooseLinesLG = [
     "Choose the one",
     "you like best"
 ];
-export const chooseLinesSM =[
+export const chooseLinesSM = [
     "Choose the",
     "one you like",
     "best"

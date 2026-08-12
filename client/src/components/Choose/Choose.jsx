@@ -61,7 +61,7 @@ const Choose = () => {
 
     return (
         <section className="choose-section w-full h-dvh p-8 pt-10">
-            <p className='text-[.7rem] text-[#eae5dd] choose-subtitle'>Discover Available Houses</p>
+            <p className='text-[.7rem] text-[#eae5dd] choose-subtitle'>Discover Indian Bio-Reserves & Eco-Stays</p>
             <div className="lg:mt-10 mt-7 title-part origin-bottom ">
                 {
                     chooseLines.map((line, index) => (
@@ -73,11 +73,11 @@ const Choose = () => {
             </div>
             <div className="choose-sec w-full flex lg:flex-row flex-col justify-center items-start gap-10 lg:mt-0">
                 <div className='lg:w-1/2 w-full text-[#b1a696] lg:text-[2rem] text-[1rem] md:leading-[1.1] lg:mt-0 mt-8 lg:pr-16'>
-                    <p>You can choose one of three premium Everdia houses in our offer. Each of our houses provides the highest quality and meets the standards adjusted to your needs. Choose the one you like.</p>
+                    <p>You can choose one of three signature Everdia forest lodges in our sanctuary. Each lodge provides zero-footprint luxury immersed in India's richest bio-diverse landscapes. Choose the sanctuary you like best.</p>
                 </div>
                 <div className='lg:w-1/2 w-full'>
                     <div className=" lg:w-[30%] w-[60%]">
-                        <p className="text-[.7rem] text-[#eae5dd]">All Everdia houses are built
+                        <p className="text-[.7rem] text-[#eae5dd]">All Everdia lodges are built
                             based on the same rules:</p>
                     </div>
                     <div className="flex flex-1 flex-wrap justify-start items-start gap-2 mt-8">
@@ -88,13 +88,13 @@ const Choose = () => {
                             Nature—Care
                         </div>
                         <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Smart
+                            Bio-Corridor
                         </div>
                         <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Privacy
+                            Conservation
                         </div>
                         <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Spacious
+                            Canopy Living
                         </div>
                         <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
                             Glassed-in

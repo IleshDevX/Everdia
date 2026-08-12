@@ -1,43 +1,43 @@
 export const feedbackH1LG = [
     [
         "Staying at Everdia in the",
-        "California desert redefined my",
-        "retreat — modern design meets",
-        "nature, and every sunset feels",
-        "like a serene masterpiece."
+        "Western Ghats redefined my",
+        "retreat — modern luxury meets",
+        "untouched forest, and every dawn",
+        "feels like a serene masterpiece."
     ],
     [
-        "Everdia offered the perfect",
-        "escape — sleek, modern spaces",
-        "surrounded by desert stillness.",
-        "Each moment felt peaceful,",
-        "grounded, and truly unique."
+        "Everdia offered the ultimate",
+        "jungle escape — sleek, modern",
+        "lodges surrounded by wild rainforest.",
+        "Listening to the forest canopy was",
+        "grounding and truly unforgettable."
     ],
     [
-        "Everdia was the perfect",
-        "desert hideaway — stylish,",
-        "peaceful, and fully surrounded",
-        "by stunning views day and",
+        "Everdia was the perfect tiger",
+        "sanctuary retreat — peaceful,",
+        "sustainable, and surrounded by",
+        "breathtaking biodiversity day and",
         " night."
     ]
 ];
 
 export const feedbackReviewLG = [
     [
-        "Marcus Simpson",
-        "New York",
+        "Aarav Sharma",
+        "Western Ghats, India",
         "review1",
         "33%"
     ],
     [
-        "Lena Morrison",
-        "Los Angeles",
+        "Sophia Chen",
+        "Kabini Reserve",
         "review2",
         "66%"
     ],
     [
-        "Jason Whitaker",
-        "San Francisco",
+        "Rohan Verma",
+        "Corbett Bio-Zone",
         "review3",
         "100%"
     ]

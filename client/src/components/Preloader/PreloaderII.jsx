@@ -135,8 +135,8 @@ export default function PreloaderII() {
             <div className="preloader-content">
                 <div className="preloader-footer">
                     <p className="text-sm">
-                        Meet Everdia—modern and cozy<br />
-                        houses, in the California desert.
+                        Meet Everdia—modern eco-lodges<br />
+                        in India's pristine jungles.
                     </p>
                 </div>
             </div>

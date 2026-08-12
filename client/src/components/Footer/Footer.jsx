@@ -40,8 +40,8 @@ const Footer = () => {
 
                 <div>
                     <p className="text-[0.8rem] text-[#b1a696] text-right">
-                        Meet Everdia—modern and cozy<br />
-                        houses, in the California desert.
+                        Meet Everdia—modern eco-lodges<br />
+                        in India's pristine jungles.
                     </p>
                 </div>
             </div>

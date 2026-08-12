@@ -55,7 +55,7 @@ const Welcome = () => {
                 <div className="md:w-1/2 w-full md:mt-0 mt-10">
                     <p className="md:text-[2rem] text-[1.4rem] text-[#b1a696] md:leading-[1.1] md:pr-24 font-normal leading-[26px] tracking-[-0.2px]">
                         <span>A place where you can be with yourself and your loved ones.</span><br />
-                        <span>A place where you can experience unforgettable desert things.</span>
+                        <span>A place where you can experience unforgettable jungle expeditions.</span>
                     </p>
                 </div>
             </div>

@@ -92,9 +92,9 @@ const StickyCols = () => {
                                     <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">1</h3>
                                     <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3>
                                 </div>
-                                <p className={`text-[12px] font-medium  ${!reveal ? "mr-6" : "mr-0"}`}> Get closer to the desert nature than ever before
+                                <p className={`text-[12px] font-medium  ${!reveal ? "mr-6" : "mr-0"}`}> Get closer to India's jungle wilderness than ever before
                                     <br />
-                                    and admire this unique, breathtaking landscape.
+                                    and admire this pristine, breathtaking bio-reserve.
                                 </p>
                             </div>
 
@@ -128,9 +128,9 @@ const StickyCols = () => {
                                 <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">{(reveal) ? "3" : "2"}</h3>
                                 <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3>
                             </div>
-                            <p className="text-[12px] font-medium"> Get closer to the desert nature than ever before
+                            <p className="text-[12px] font-medium"> Get closer to India's jungle wilderness than ever before
                                 <br />
-                                and admire this unique, breathtaking landscape.
+                                and admire this pristine, breathtaking bio-reserve.
                             </p>
                         </div>
                     </div>
@@ -148,9 +148,9 @@ const StickyCols = () => {
                                 {/* <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">3</h3>
                                 <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3> */}
                             </div>
-                            <p className={`text-[12px] font-medium  ${!reveal ? "mr-0" : "mr-6"}`}> Get closer to the desert nature than ever before
+                            <p className={`text-[12px] font-medium  ${!reveal ? "mr-0" : "mr-6"}`}> Get closer to India's jungle wilderness than ever before
                                 <br />
-                                and admire this unique, breathtaking landscape.
+                                and admire this pristine, breathtaking bio-reserve.
                             </p>
                         </div>
                     </div>

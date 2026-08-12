@@ -12,8 +12,8 @@ const MapLink = () => {
                 </p>
 
                 <h1 className="text-[5vw] leading-15 tracking-tight mt-5 text-[#f4efe7]">
-                    Our Everdia retreats are located<br />
-                    near Los Angeles with easy<br />
+                    Our Everdia sanctuaries are nestled<br />
+                    in India's prime bio-reserves with<br />
                 </h1>
             </div>
 
@@ -25,7 +25,7 @@ const MapLink = () => {
                 onMouseLeave={() => setActive(false)}
                 className="text-[#b1a696] text-[5vw] underline hover:text-[#f4efe7]"
             >
-                access by road.
+                easy access by road.
             </a>
         </section>
     );
