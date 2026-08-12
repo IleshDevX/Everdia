@@ -1,5 +1,7 @@
 {
-  "dependencies": {
-    "react-responsive": "^10.0.1"
+  "name": "everdia-root",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix client run build"
   }
 }
