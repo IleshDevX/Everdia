@@ -1,17 +1,17 @@
+import { useState } from "react";
 import { useGSAP } from "@gsap/react";
-import gsap, { SplitText } from "gsap/all";
+import gsap from "gsap/all";
 import { useMediaQuery } from "react-responsive";
 import { chooseLinesLG, chooseLinesSM } from "../../constants/welcome";
 
 const Choose = () => {
-
+    const [activePill, setActivePill] = useState(0);
     const isMobD = useMediaQuery({
         query: "(max-width:768px)",
     });
     const chooseLines = isMobD ? chooseLinesSM : chooseLinesLG;
 
     useGSAP(() => {
-
         const lines = gsap.utils.toArray(".choose-title-clip");
 
         const tl = gsap.timeline({
@@ -20,7 +20,6 @@ const Choose = () => {
                 start: "top 75%",
                 end: "bottom 100%",
                 scrub: true,
-                // markers: true,
             },
         });
 
@@ -30,7 +29,6 @@ const Choose = () => {
             ease: "power1.inOut"
         });
 
-        // Animate the div height
         if (!isMobD) {
             tl.fromTo(
                 ".title-part",
@@ -39,7 +37,6 @@ const Choose = () => {
             );
         }
 
-        // Animate text reveal — run *at the same time*
         tl.to(
             lines,
             {
@@ -48,7 +45,7 @@ const Choose = () => {
                 stagger: 0.2,
                 duration: 1,
             },
-            "<" // 👈 runs at the same time as the previous animation
+            "<"
         );
 
         if (!isMobD) {
@@ -59,13 +56,22 @@ const Choose = () => {
         }
     });
 
+    const pills = [
+        "Sustainable",
+        "Nature—Care",
+        "Bio-Corridor",
+        "Conservation",
+        "Canopy Living",
+        "Glassed-in"
+    ];
+
     return (
-        <section className="choose-section w-full h-dvh p-8 pt-10">
+        <section id="choose" className="choose-section w-full h-dvh p-8 pt-10">
             <p className='text-[.7rem] text-[#eae5dd] choose-subtitle'>Discover Indian Bio-Reserves & Eco-Stays</p>
             <div className="lg:mt-10 mt-7 title-part origin-bottom ">
                 {
                     chooseLines.map((line, index) => (
-                        <h1 key={index} className={`choose-heading text-[#f4efe7] lg:text-[9.5rem] text-[3rem] leading-[0.9]`} font-medium tracking-tighter choose-title>
+                        <h1 key={index} className={`choose-heading text-[#f4efe7] lg:text-[9.5rem] text-[3rem] leading-[0.9] font-medium tracking-tighter choose-title`}>
                             <span className={`choose-title-break ${index == 1 ? "lg:pb-3 pb-2" : ""}`}>{line}<span className={`choose-title-clip ${index == 1 ? "lg:pb-3 pb-2" : ""}`}>{line}</span></span>
                         </h1>
                     ))
@@ -76,29 +82,23 @@ const Choose = () => {
                     <p>You can choose one of three signature Everdia forest lodges in our sanctuary. Each lodge provides zero-footprint luxury immersed in India's richest bio-diverse landscapes. Choose the sanctuary you like best.</p>
                 </div>
                 <div className='lg:w-1/2 w-full'>
-                    <div className=" lg:w-[30%] w-[60%]">
-                        <p className="text-[.7rem] text-[#eae5dd]">All Everdia lodges are built
-                            based on the same rules:</p>
+                    <div className="lg:w-[40%] w-[70%]">
+                        <p className="text-[.7rem] text-[#eae5dd]">All Everdia lodges are built based on the same rules:</p>
                     </div>
-                    <div className="flex flex-1 flex-wrap justify-start items-start gap-2 mt-8">
-                        <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Sustainable
-                        </div>
-                        <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Nature—Care
-                        </div>
-                        <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Bio-Corridor
-                        </div>
-                        <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Conservation
-                        </div>
-                        <div className="border-[1px] border-[#b1a696] text-[#b1a696] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Canopy Living
-                        </div>
-                        <div className="border-[1px] border-[#f4efe7] text-[#f4efe7] lg:text-[2rem] px-[20px] py-[4px] rounded-full">
-                            Glassed-in
-                        </div>
+                    <div className="flex flex-1 flex-wrap justify-start items-start gap-2 mt-6">
+                        {pills.map((pill, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => setActivePill(idx)}
+                                className={`lg:text-[1.8rem] text-sm px-[20px] py-[4px] rounded-full border transition-all duration-300 cursor-pointer ${
+                                    activePill === idx
+                                        ? "bg-[#f4efe7] text-[#181717] border-[#f4efe7] shadow-lg scale-105"
+                                        : "border-[#b1a696] text-[#b1a696] hover:border-[#f4efe7] hover:text-[#f4efe7]"
+                                }`}
+                            >
+                                {pill}
+                            </button>
+                        ))}
                     </div>
                 </div>
             </div>

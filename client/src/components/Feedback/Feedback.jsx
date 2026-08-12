@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMdArrowForward, IoMdArrowBack } from "react-icons/io";
+import { FaStar } from "react-icons/fa";
 import { feedbackH1LG, feedbackReviewLG } from "../../constants/feedback";
 
 import review1 from "../../assets/review1.jpg";
@@ -27,54 +28,68 @@ const Feedback = () => {
     const progressWidth = feedbackReviewLG[index][3];
 
     return (
-        <section className='w-sereen h-dvh p-8 flex flex-col justify-center items-center'>
-            <div className='w-full text-left'>
-                <p className='text-[.7rem] font-bold text-[#eae5dd] activities-subtitle text-left'>
-                    Do people like us?
-                </p>
+        <section id="feedback" className='w-screen h-dvh p-8 flex flex-col justify-center items-center bg-[#181717] relative'>
+            <div className='w-full max-w-6xl text-left'>
+                <div className="flex justify-between items-center mb-4">
+                    <p className='text-[.7rem] font-bold text-[#eae5dd] uppercase tracking-widest'>
+                        Guest Testimonials
+                    </p>
+                    <div className="flex items-center gap-1 text-amber-400 text-xs font-semibold glass-card px-3 py-1 rounded-full">
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <span className="text-[#f4efe7] ml-1">5.0 (Verified Stays)</span>
+                    </div>
+                </div>
 
-                <div>
-                    <h1 className='text-[#f4efe7] text-7xl mt-4 mb-6'>
+                <div className="min-h-[220px]">
+                    <h1 className='text-[#f4efe7] text-3xl md:text-6xl font-bold mt-4 mb-6 leading-tight transition-all duration-500'>
                         {feedbackH1LG[index].map((line, i) => (
-                            <span key={i}>
-                                {line}<br />
+                            <span key={i} className="block">
+                                "{line}"
                             </span>
                         ))}
                     </h1>
                 </div>
 
-                <div className='flex items-center gap-4 mt-12'>
+                <div className='flex items-center gap-4 mt-8'>
                     <img
                         src={reviewImages[feedbackReviewLG[index][2]]}
-                        alt="review img"
-                        className='w-[4.5vw] rounded-4xl'
+                        alt="Guest Avatar"
+                        className='w-16 h-16 object-cover rounded-full border-2 border-[#b1a696]/40 shadow-xl'
                     />
-                    <p className="text-[#aca192] text-[0.7rem]">
-                        {feedbackReviewLG[index][0]}<br />
-                        ({feedbackReviewLG[index][1]})
-                    </p>
+                    <div>
+                        <p className="text-[#f4efe7] text-base font-bold">
+                            {feedbackReviewLG[index][0]}
+                        </p>
+                        <p className="text-[#aca192] text-xs font-medium">
+                            {feedbackReviewLG[index][1]} • <span className="text-emerald-400">Verified Sanctuary Visitor</span>
+                        </p>
+                    </div>
                 </div>
 
-                <div className="flex justify-between items-center mt-14">
-                    <div className="flex gap-1">
+                <div className="flex justify-between items-center mt-12">
+                    <div className="flex gap-2">
                         <button
                             onClick={handlePrev}
-                            className='border-[1px] p-1 border-[#aaa090] hover:bg-[#aaa090] rounded-4xl'
+                            className='p-3 border border-[#aaa090]/40 bg-[#292725] hover:bg-[#b1a696] hover:text-[#181717] rounded-full transition-all duration-300 cursor-pointer'
                         >
-                            <IoMdArrowBack className="text-[#f1ece4] w-[2vw] h-[3.4vh]" />
+                            <IoMdArrowBack className="text-xl" />
                         </button>
 
                         <button
                             onClick={handleNext}
-                            className='border-[1px] p-1 border-[#aaa090] rounded-4xl'
+                            className='p-3 border border-[#aaa090]/40 bg-[#292725] hover:bg-[#b1a696] hover:text-[#181717] rounded-full transition-all duration-300 cursor-pointer'
                         >
-                            <IoMdArrowForward className="text-[#f1ece4] w-[2vw] h-[3.4vh]" />
+                            <IoMdArrowForward className="text-xl" />
                         </button>
                     </div>
 
-                    <div className="relative z-9 w-70 h-[0.1rem] bg-[#4f4b48]">
+                    <div className="relative z-9 w-70 h-[0.15rem] bg-[#4f4b48] rounded-full overflow-hidden">
                         <div
-                            className="progress-line absolute z-10 bg-[#f4efe7] h-[0.1rem] top-1/2 -translate-y-1/2 left-0"
+                            className="progress-line absolute z-10 bg-[#f4efe7] h-full top-0 left-0 transition-all duration-500"
                             style={{ width: progressWidth }}
                         ></div>
                     </div>
